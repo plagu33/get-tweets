@@ -3,10 +3,10 @@
 
 require "libraries/twitter/twitteroauth.php";
 
-$consumer_key        = 'UzN3pdkkYjcyRal2Z1vrw';
-$consumer_secret     = 'x1iLlMdUnngfWjsA950uvq1v3yqMXmoXvWivlQQ';
-$access_token	     = '800680400-Hf1zg5pOhXLcLaq2wFkoLpIYArVX9sYna1pTSsWF'; // Optional
-$access_token_secret = 'JL4gvW8FY3tDZEqZmzpTWziBU9QXAJjK6a0KEuB1xg8ab'; // Optional
+$consumer_key        = '';
+$consumer_secret     = '';
+$access_token	     = ''; // Optional
+$access_token_secret = ''; // Optional
 
 $connection = new TwitterOAuth($consumer_key,$consumer_secret, $access_token, $access_token_secret);
 
