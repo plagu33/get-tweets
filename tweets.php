@@ -11,9 +11,14 @@ $access_token_secret = ''; // Optional
 $connection = new TwitterOAuth($consumer_key,$consumer_secret, $access_token, $access_token_secret);
 
 $exclude = '-filter:retweets'; /*no retweets*/
+
+/*THIS*/
 $params  = array('screen_name' =>'mmerino');
-//$statuses = $connection->get("search/tweets", $params)->statuses;
 $statuses = $connection->get("statuses/user_timeline", $params);
+
+/*OR*/
+$params  = array('q' =>'#hashtag');
+$statuses = $connection->get("search/tweets", $params);
 
 echo "<pre>";
 print_r($statuses);
